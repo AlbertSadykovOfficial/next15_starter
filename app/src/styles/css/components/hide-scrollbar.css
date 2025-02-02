@@ -1,0 +1,30 @@
+/* ===== Scrollbar CSS ===== */
+@layer scrollbar {
+  /* Firefox */
+  .hide-scrollbar {
+    scrollbar-width: 0px;
+    scrollbar-color: transparent transparent;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Chrome, Edge, and Safari */
+  .hide-scrollbar::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 0;
+  }
+
+  * {
+    @apply hide-scrollbar;
+  }
+}
+
+/* ===== Scrollbar CSS ===== */

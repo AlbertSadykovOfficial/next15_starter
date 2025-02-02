@@ -1,0 +1,14 @@
+version: "3"
+services:
+  next:
+    container_name: next15_typescript_eslint_tailwind_starter
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "${EXTERNAL_PORT}:3000"
+    volumes:
+      - "./app:/app/"
+      - "./logs:/root/.npm/_logs"
+    restart: always
+    command: bash -c "npm run start"

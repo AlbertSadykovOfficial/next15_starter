@@ -1,0 +1,9 @@
+services:
+  next_install_and_build:
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - "./app:/app/"
+      - "./logs:/root/.npm/_logs"
+    command: bash -c "npm install && npm run build"
