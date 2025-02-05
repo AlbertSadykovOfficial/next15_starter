@@ -1,4 +1,3 @@
-version: "3"
 services:
   next:
     container_name: next15_typescript_eslint_tailwind_starter
