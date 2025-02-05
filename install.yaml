@@ -7,3 +7,5 @@ services:
       - "./app:/app/"
       - "./logs:/root/.npm/_logs"
     command: bash -c "npm install && npm run build"
+    # Debug Mode:
+    # command: bash -c "node -e 'function debug () { setTimeout(debug, 100000000) }; debug()'"

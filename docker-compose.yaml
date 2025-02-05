@@ -12,3 +12,5 @@ services:
       - "./logs:/root/.npm/_logs"
     restart: always
     command: bash -c "npm run start"
+    # Debug Mode:
+    # command: bash -c "node -e 'function debug () { setTimeout(debug, 100000000) }; debug()'"
