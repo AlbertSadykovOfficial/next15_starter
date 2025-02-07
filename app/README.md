@@ -1,5 +1,5 @@
-# Next 15 starter (with: eslint / typescript / tailwind)
-(Next 15 next eslint typescript tailwind starter project)
+# Next 15 starter (with: redux / typescript / eslint / tailwind)
+(Next 15 next redux typescript eslint tailwind starter project)
 
 ## Структура проекта
 Создана по материалам:
